@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+    <header >
+        <h1>Student Management System</h1>
+    </header>
+    <nav class="sidenav">
+        <a href="admin.home.html" style="text-decoration: none; background-color: tomato;
+        color: rgb(59, 56, 55);" >Home</a>
+        <a id="dropdown">Student</a>
+        <div id="dropdown-container">
+            <a href="show" style="text-decoration: none; font-size: 17px;">Student List</a>
+            <a href="admin.addstudent.html" style="text-decoration: none; font-size: 17px;">Add Student</a>
+        </div>
+        <a id="dropdown">Staff</a>
+        <div id="dropdown-container">
+            <a  href="showstaff" style="text-decoration: none; font-size: 17px;">Staff List</a>
+            <a href="admin.addstaff.html" style="text-decoration: none; font-size: 17px;">Add Staff</a>
+        </div>
+        <a href="index.html" onclick="preventReload()" style="text-decoration: none;">Logout</a>
+        <!-- <script type="text/javascript">
+            function preventBack() { window.history.forward(); }
+            setTimeout("preventBack()", 0);
+            window.onunload = function () { null };
+        </script> -->
+    </nav>
+    <section>
+        <div   style="padding-top: 100px; padding-left: 45%;">
+            <h3>Welcome admin</h3>
+            <img style="margin-left: -15%; margin-top: 5%; width:50%;" src="Images/admin.png" alt="simple user pic">
+        </div>
+    </section>
+    <script src="./js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stafflist</title>
+    <link rel="stylesheet" href="css/stheader.css">
+</head>
+<body>
+    <header>
+    <h1>Student Management System</h1>
+    </header>
+    <nav class="sidenav">
+        <a href="staff.html" style="text-decoration: none;">Home</a>
+        <a id="dropdown">Student</a>
+        <div id="dropdown-container">
+            <a href="staff.studentlist.html" style="text-decoration: none; font-size: 17px;">Student List</a>
+            <a href="staff.attendance.html" style="text-decoration: none; font-size: 17px;">attendance</a>
+        </div>
+        <a href="staff.stafflist.html" style="text-decoration: none; font-size: 17px; background-color: rgb(29, 206, 206);
+        color: rgb(59, 56, 55); ">Staff List</a>
+        <a href="index.html" onclick="preventReload()" style="text-decoration: none;">Logout</a>
+            <!-- <script type="text/javascript">
+                function preventBack() { window.history.forward(); }
+                setTimeout("preventBack()", 0);
+                window.onunload = function () { null };
+            </script> -->
+        </nav>
+        <section>
+            <div>
+                <h3 style="padding-top: 100px; margin-left: 45%;">Staff List</h3>
+            </div>
+            <div >
+                <table id="sttable" border="1" cellpadding="15" style="border-collapse: collapse; overflow-x: auto; margin-left: auto;
+                margin-right: auto; text-align: center; overflow-y: auto;">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>Department</th>
+                            <th>Email</th>
+                            <th>Join Date</th>
+                            <th>Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#firststaff" style="text-decoration: none;" onclick="showPerson('firstperson')">name</a></td>
+                            <td>gen</td>
+                            <td>dep</td>
+                            <td>mail</td>
+                            <td>joined</td>
+                            <td>sala</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="firststaff" style="display: none;">
+                Name:
+                <!-- Don't keep add salary option
+                    Dont show salary of staffs -->
+            </div>
+        </section>
+</body>
+</html>

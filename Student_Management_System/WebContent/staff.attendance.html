@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attendance</title>
+    <link rel="stylesheet" href="css/stheader.css">
+    <style>
+        #dropdown-container1{
+            display: block;
+            cursor: pointer;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Student Management System</h1>
+    </header>
+    <nav class="sidenav">
+        <a href="staff.html" style="text-decoration: none; ">Home</a>
+        <a id="dropdown" style="background-color: rgb(29, 206, 206);
+        color: rgb(59, 56, 55);">Student</a>
+        <div id="dropdown-container1">
+            <a href="staff.studentlist.html" style="text-decoration: none; font-size: 17px;">Student List</a>
+            <a href="staff.attendance.html" style="text-decoration: none; font-size: 17px;background-color: rgb(29, 206, 206);
+            color: rgb(59, 56, 55);">attendance</a>
+        </div>
+        <a href="staff.stafflist.html" style="text-decoration: none; font-size: 17px;">Staff List</a>
+        <a href="index.html" onclick="preventReload()" style="text-decoration: none;">Logout</a>
+            <!-- <script type="text/javascript">
+                function preventBack() { window.history.forward(); }
+                setTimeout("preventBack()", 0);
+                window.onunload = function () { null };
+            </script> -->
+        </nav>
+        <section>
+            <div>
+                <h3  style="padding-top: 100px; margin-left: 45%; padding-bottom: 50px;">Mark Attendance</h3>
+                
+            <!-- add attendance check option -->
+            </div>
+        </section>
+</body>
+</html>

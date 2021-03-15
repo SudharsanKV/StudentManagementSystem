@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add-staff</title>
+    <link rel="stylesheet" href="css/header.css">
+    <style>
+        #dropdown-container2{
+            display: block;
+            cursor: pointer;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Management System</h1>
+    </header>
+    <!-- <img src="/Images/addstudent.png" alt="add staff"> -->
+    <nav class="sidenav">
+        <a href="admin.home.html" style="text-decoration: none;" >Home</a>
+        <a id="dropdown">Student</a>
+        <div id="dropdown-container">
+            <a href="show" style="text-decoration: none; font-size: 17px;">Student List</a>
+            <a href="admin.addstudent.html" style="text-decoration: none; font-size: 17px;">Add Student</a>
+        </div>
+        <a id="dropdown" style="background-color: tomato;color: rgb(59, 56, 55);">Staff</a>
+        <div id="dropdown-container2">
+            <a href="showstaff" style="text-decoration: none; font-size: 15px;">Staff List</a>
+            <a href="admin.addstaff.html" style="text-decoration: none; font-size: 15px;background-color: tomato;
+            color: rgb(59, 56, 55);">Add Staff</a>
+        </div>
+        <a href="index.html" onclick="preventReload()" style="text-decoration: none;">Logout</a>
+    </nav>
+    <section >
+        <div>
+            <h3  style="padding-top: 100px; margin-left: 45%;">Add Staff</h3>
+        </div>
+        <div style="margin-left: 200px;">
+        <form action="stafflist" method="POST" >
+            <label for="stname">Name</label><br>
+                <input type="text" id="stname" name="stname" required><br><br>
+                <label for="stgender">Gender</label><br><br>
+                <label>
+                <input type="radio" id="stgender" name="gender"  value="Male" checked>Male
+                </label>
+                <label>
+                <input type="radio" id="stgender" name="gender"  value="Female">Female
+                </label><br><br>
+                <label for="stemailid">Email</label><br>
+                <input type="email" id="stemailid" name="stemailid" required><br><br>
+                <label for="stmobile">Mobile no</label><br>
+                <input type="tel" id="stmobile" name="stmobile" required><br><br>
+                <label for="stdoj">Date of Joining</label><br>
+                <input type="date" id="stdoj" name="stdoj" required><br><br>
+                <label for="stsalary">Salary</label><br>
+                <input type="number" id="stsalary" name="stsalary" min="10000" max="25000" step="2000" required><br><br>
+                <label for="staddress">Address</label><br>
+                <input type="text" id="staddress" name="staddress" required><br><hr>
+                <button id="but" onclick="addStaff()">Add</button><br>
+        </form>
+        </div>
+    </section>
+    <script src="/js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/sdheader.css">
+</head>
+<body>
+    <header>
+        <h1>Student Management System</h1>
+        </header>
+        <!-- <img src="/Images/for all student.png" alt="Background color"> -->
+        <nav class="sidenav">
+            <a href="student.html" style="text-decoration: none;" >Home</a>
+            <a href="student.profile.html" style="text-decoration: none; background-color: yellow;
+            color: rgb(59, 56, 55);" onclick="viewProfile()">Profile</a>
+            <a href="student.marks.html" style="text-decoration: none;">Marks</a>
+            <a href="index.html" onclick="preventReload()" style="text-decoration: none;">Logout</a>
+            <!-- <script type="text/javascript">
+                function preventBack() { window.history.forward(); }
+                setTimeout("preventBack()", 0);
+                window.onunload = function () { null };
+            </script> -->
+        </nav>
+        <section>
+            <div>
+                <h3 style="padding-top: 100px; margin-left: 45%;">Profile</h3>
+            </div>
+            <div   style="margin-top: 5%; margin-left: 12%;">
+                Name: "Student Name"<br><br>
+                Gender: "Male"<br><br>
+                Department: "Student Department"<br><br>
+                Email: "Student email"<br><hr>
+                Father's Name: "Student Father's Name"<br><br>
+                Mobile no: "Student Father mobile no"<br><br>
+                Mother's Name: "Student Mother's Name"<br><br>
+                Mobile no: "Student Mother's mobile no"<br><br>
+                Adress: "Student address"<br><hr>
+            </div>
+        </section>
+</body>
+</html>

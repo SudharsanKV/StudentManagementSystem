@@ -1,0 +1,74 @@
+body{
+    /* background-image: linear-gradient(orange, yellow); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* width: 100%;    */
+    font-family: 'Lato', sans-serif;
+}
+header{
+    background-color: yellow;
+    /* opacity: 0.8; */
+    position:fixed;
+    /* z-index: 0; */
+    width: 100%;
+    margin-left: -8px;
+    text-align: center;
+    padding: 5px;
+    top: 0;
+    /* margin-top: -8px; */
+}
+.sidenav{
+    /* opacity: 0.6; */
+    height: 100%;
+    width: 180px; 
+    position: fixed;
+    z-index: 1;
+    top: 89px; 
+    left: 0;
+    background-color: rgb(59, 56, 55);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav a {
+    padding: 10px 8px 10px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: yellow;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(59, 56, 55);
+}
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+.sidenav a, #dropdown{
+    display: block;
+    /* padding: 10px 10px 5px 20px; */
+    text-decoration: none;
+    color: yellow; 
+    /* border: none; */
+    /* text-align: left; */
+    cursor: pointer;
+}
+#dropdown-container{
+    display: none;
+    cursor: pointer;
+    padding-left: 10px;
+}
+#dropdown:hover + #dropdown-container{
+    display: block;
+}
+#dropdown-container:hover{
+    display: block;
+}
+
+button{
+    background-color: rgba(134, 247, 28, 0.938);
+    font-size: 15px;
+    border-radius: 4px;
+    /* margin-left: 8px; */
+    width: 80px;
+    padding: 3px;
+    border-color: transparent;
+}

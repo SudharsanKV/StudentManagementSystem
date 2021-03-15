@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body style="background: url('Images/loginpic.jpg'); background-size: cover; background-repeat: no-repeat; width: 100%; height: auto; position:relative;">
+    <header>
+        <h1>Student Management System</h1>
+    </header>
+    <!-- <form method="POST" action="admin.html" id="login-form"> -->
+    <div id="form">
+        <label for="uservalue">Username</label><br>
+        <input id="uservalue"  type="text" name="username"><br>
+        <label for="passwordvalue">Password</label><br>
+        <input id="passwordvalue" type="text" name="password"><br><br>
+        <button id="submit" onclick="validate()">login</button><br>
+        <p ><a id="resetlink" href="forgotpassword.html" style="text-decoration: none; display: none;">Forgot Password?</a></p>
+    </div>    
+    <!-- </form> -->
+    <script type="text/javascript">
+        function validate(){
+            let user = document.getElementById('uservalue').value;
+            let password = document.getElementById('passwordvalue').value;
+            if (user == "" && password == ""){
+                console.log("redirected");
+                document.location.href ="admin.home.html";
+                alert("Login successfull as admin");                
+            }
+            else if(user == "staff" && password == "staff"){
+                document.location.href = "staff.html";
+                alert("Login successfull as Staff"); 
+            }
+            else if(user == "student" && password == "student"){
+                document.location.href = "student.html";
+                alert("Login successfull"); 
+            }
+            else{
+                alert('username or password is incorrect');
+                document.getElementById("resetlink").style.display='block';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add-student</title>
+    <link rel="stylesheet" href="css/header.css">
+    <style>
+        #dropdown-container1{
+            display: block;
+            cursor: pointer;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Management System</h1>
+    </header>
+    <!-- <img src="/Images/addstudent.png" alt=""> -->
+    <nav class="sidenav">
+        <a href="admin.home.html" style="text-decoration: none;" >Home</a>
+        <a id="dropdown" style="background-color: tomato;color: rgb(59, 56, 55);">Student</a>
+        <div id="dropdown-container1">
+            <a href="show" style="text-decoration: none; font-size: 17px;">Student List</a>
+            <a href="admin.addstudent.html" style="text-decoration: none; font-size: 17px;background-color: tomato;
+            color: rgb(59, 56, 55);">Add Student</a>
+        </div>
+        <a id="dropdown">Staff</a>
+        <div id="dropdown-container">
+            <a href="showstaff" style="text-decoration: none; font-size: 15px;">Staff List</a>
+            <a href="admin.addstaff.html" style="text-decoration: none; font-size: 15px;">Add Staff</a>
+        </div>
+        <a href="index.html" onclick="preventReload()" style="text-decoration: none;">Logout</a>
+        <!-- <script type="text/javascript">
+            function preventBack() { window.history.forward(); }
+            setTimeout("preventBack()", 0);
+            window.onunload = function () { null };
+        </script> -->
+    </nav>
+    <section >
+        <div>
+            <h3 style="padding-top: 100px; margin-left: 45%;">Add Student</h3>
+        </div>
+        <div style="margin-left: 200px; ">
+        <form action="list" method="POST" >
+         	<label for="sdname">Name</label><br>
+        		<input type="text" id="sdname" name="sdname" required ><br><br>
+             <label for="sdgender">Gender</label><br><br>
+             <label>
+             <input type="radio" id="sdgender" name="sdgender"  value="Male" checked>Male
+             </label>
+             <label>
+             <input type="radio" id="sdgender" name="sdgender"  value="Female">Female
+             </label><br><br>
+             <label for="sddept">Department</label><br><br>
+             <select id="sdept" name="sddept">
+                 <option value ="AGRI">AGRI</option>
+                 <option value ="AUTO">AUTO</option>
+                 <option value ="BIO">BIO</option>
+                 <option value ="CIVIL">CIVIL</option>
+                 <option value ="CSE">CSE</option>
+                 <option value ="ECE">ECE</option>
+                 <option value ="EEE" >EEE</option>
+                 <option value ="IT">IT</option>
+                 <option value ="MECH">MECH</option>
+             </select><br><br>
+             <label for="sdemailid">Email</label><br>
+             <input type="email" id="sdemailid" name="sdemailid" required ><br><hr>
+             <label for="sdfname">Father's Name</label><br>
+             <input type="text" id="sdfname" name="sdfname" required ><br><br>
+             <label for="sdfmobile">Mobile no</label><br>
+             <input type="tel" id="sdfmobile" name="sdfmobile" required ><br><br>
+             <label for="sdmname">Mother's Name</label><br>
+             <input type="text" id="sdmname" name="sdmname" required ><br><br>
+             <label for="sdmmobile">Mobile no</label><br>
+             <input type="tel" id="sdmmobile" name="sdmmobile" required ><br><br>
+             <label for="sdaddress">Address</label><br>
+             <input type="text" id="address" name="sdaddress" required ><br><hr>
+             <input type="submit">
+        </form>
+        </div>
+    </section>
+</body>
+</html>

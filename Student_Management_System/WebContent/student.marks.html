@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks</title>
+    <link rel="stylesheet" href="css/sdheader.css">
+</head>
+<body>
+    <header>
+        <h1>Student Management System</h1>
+        </header>
+        <!-- <img src="/Images/for all student.png" alt="Background color"> -->
+        <nav class="sidenav">
+            <a href="student.html" style="text-decoration: none;" >Home</a>
+            <a href="student.profile.html" style="text-decoration: none;">Profile</a>
+            <a href="student.marks.html" style="text-decoration: none; background-color: yellow;
+            color: rgb(59, 56, 55);">Marks</a>
+            <a href="index.html" onclick="preventReload()" style="text-decoration: none;">Logout</a>
+            <!-- <script type="text/javascript">
+                function preventBack() { window.history.forward(); }
+                setTimeout("preventBack()", 0);
+                window.onunload = function () { null };
+            </script> -->
+        </nav>
+        <section>
+            <div>
+                <h3  style="padding-top: 100px; margin-left: 45%;">Marks</h3>
+            </div>
+            <div>
+                <table id="show Marks" border="1" cellpadding="15" style="border-collapse: collapse;
+                text-align: center; overflow-x: auto; overflow-y: auto; margin-right: auto; margin-left: auto;">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Name</th>
+                            <th rowspan="2">Department</th>
+                            <th colspan="8">Semester Marks
+                                <tr id="semrow">
+                                    <th>I<sup>st</sup> sem</th>
+                                    <th>II<sup>nd</sup> sem</th>
+                                    <th>III<sup>rd</sup> sem</th>
+                                    <th>IV<sup>th</sup> sem</th>
+                                    <th>V<sup>th</sup> sem</th>
+                                    <th>VI<sup>th</sup> sem</th>
+                                    <th>VII<sup>th</sup> sem</th>
+                                    <th>VIII<sup>th</sup> sem</th>
+                                </tr>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Student Name</td>
+                            <td>Student Dept</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+</body>
+</html>
